@@ -67,6 +67,7 @@ new_data.head(15)
 
 
 
+
 ** Since the dataset did not contain any empty or duplicated rows or columns, I did not erase any. **
 
 
@@ -74,10 +75,10 @@ new_data.head(15)
 
 
 ```python
-new_data.head(15)
+new_data.info
 ```
 
-<img width="282" alt="Screen Shot 2022-05-23 at 21 39 39" src="https://user-images.githubusercontent.com/91611463/169885297-281a2da0-b7ab-4433-b16f-dd30f5f8a402.png">
+<img width="606" alt="Screen Shot 2022-05-23 at 21 54 32" src="https://user-images.githubusercontent.com/91611463/169887428-ef1a2343-ed5f-417c-aed6-de4f181001aa.png">
 
 
 #### Build your Model
