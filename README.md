@@ -40,7 +40,7 @@ data = pd.read_csv("student-mat.csv")
  
  ### Dataset
  
- The data set is from the UCL Machine Learning Repository. Link to dataset [Link](https://www.kaggle.com/datasets/dipam7/student-grade-prediction?select=student-mat.csv)
+ The data set is from the UCL Machine Learning Repository. Link to dataset [Kaggle](https://www.kaggle.com/datasets/dipam7/student-grade-prediction?select=student-mat.csv)
 
 
 
