@@ -45,7 +45,7 @@ sns.heatmap(corrmat, vmax=.8, square=True)
 ### Manipulating the Dataset
 
 ```python
-new_data = 	data.loc[:, ["Dalc", "Walc", "goout", "freetime", "G3"]]
+new_data = data.loc[:, ["Dalc", "Walc", "goout", "freetime", "G3"]]
 new_data.head(15)
 ```
 
