@@ -27,6 +27,16 @@ The algorithm interrogates whether the going out with friends, workday alcohol c
   
 4. Seaborn
   to create the heat map
+  
+  
+
+```python
+import pandas as pd 
+import matplotlib.pyplot as plt
+from sklearn import datasets
+import seaborn as sns
+data = pd.read_csv("student-mat.csv")
+```
  
 
 
@@ -43,6 +53,9 @@ sns.heatmap(corrmat, vmax=.8, square=True)
 
 
 ### Manipulating the Dataset
+
+
+##### Creating a new dataset called "new_data" that only contains the required columns and displaying first 15 rows
 
 ```python
 new_data = data.loc[:, ["Dalc", "Walc", "goout", "freetime", "G3"]]
@@ -62,12 +75,51 @@ new_data.head(15)
 
 ```python
 new_data.head(15)
-new_data.info
 ```
 
+<img width="282" alt="Screen Shot 2022-05-23 at 21 39 39" src="https://user-images.githubusercontent.com/91611463/169885297-281a2da0-b7ab-4433-b16f-dd30f5f8a402.png">
 
 
+#### Build your Model
 
+
+1. Now I will select the variables I want to use in my regression model and split the training and test sets calling ```python train_test_split()```:
+
+
+```python
+from sklearn.model_selection import train_test_split
+
+# Selected_features = ['Dalc','Walc','goout','freetime']
+
+X = new_data.drop("G3",axis=1)
+y = new_data.G3.values
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=0)
+```
+
+2. Now I can train your model, by calling ```python fit()``` with my training data, and print out its result:
+
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, classification_report 
+from sklearn.linear_model import LogisticRegression
+
+model = LogisticRegression()
+model.fit(X_train, y_train)
+model.predict(X_train)
+predictions = model.predict(X_test)
+
+print(classification_report(y_test, predictions))
+print('Predicted labels: ', predictions)
+print('Accuracy: ', accuracy_score(y_test, predictions))
+```
+
+<img width="772" alt="Screen Shot 2022-05-23 at 21 44 57" src="https://user-images.githubusercontent.com/91611463/169886033-692b6b76-936f-4570-a394-b57b4b85f75b.png">
+
+
+#### Conclusion 
+
+The correlation between the variables in the X-axis and grade were insignificant, with an accuracy score of 0.139. Therefore, I concluded that I can spend time with my friends, and spend my free time with a light heart.
 
 
 
