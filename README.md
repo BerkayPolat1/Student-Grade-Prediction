@@ -1,4 +1,4 @@
-# Logistic Regression to Predict the Final Grade of a Portuguese Student
+# Logistic Regression to Predict the Final Grade of a Student
 
 
 <img width="846" alt="Log-Reg-Graph" src="https://user-images.githubusercontent.com/91611463/169881626-c905da51-913b-43cd-9e41-3e5912c3256a.png">
