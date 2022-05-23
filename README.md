@@ -114,7 +114,9 @@ print('Predicted labels: ', predictions)
 print('Accuracy: ', accuracy_score(y_test, predictions))
 ```
 
-<img width="772" alt="Screen Shot 2022-05-23 at 21 44 57" src="https://user-images.githubusercontent.com/91611463/169886033-692b6b76-936f-4570-a394-b57b4b85f75b.png">
+
+<img width="823" alt="Screen Shot 2022-05-23 at 21 49 07" src="https://user-images.githubusercontent.com/91611463/169886652-aae90cee-c18d-4733-b4af-62093441d30e.png">
+
 
 
 #### Conclusion 
