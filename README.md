@@ -9,7 +9,7 @@
 
 ## Purpose 
 
-The algorithm interrogates whether the going out with friends, workday alcohol consumption, weekend alcohol consumption, going out with friends, and freetime after school is in correlation with grades. 
+The algorithm interrogates whether workday alcohol consumption, weekend alcohol consumption, going out with friends, and freetime after school is in correlation with grades. 
 
 
 
