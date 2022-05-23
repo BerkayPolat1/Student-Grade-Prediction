@@ -116,11 +116,18 @@ print('Accuracy: ', accuracy_score(y_test, predictions))
 ```
 
 
+
+
+
+
 <img width="823" alt="Screen Shot 2022-05-23 at 21 49 07" src="https://user-images.githubusercontent.com/91611463/169886652-aae90cee-c18d-4733-b4af-62093441d30e.png">
 
 
 
-#### Conclusion 
+
+
+
+## Conclusion 
 
 The correlation between the variables in the X-axis and grade were insignificant, with an accuracy score of 0.139. Therefore, I concluded that I can spend time with my friends, and spend my free time with a light heart.
 
